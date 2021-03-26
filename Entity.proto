@@ -1,0 +1,18 @@
+syntax = 'proto3';
+
+message Entity {
+  string name = 1;
+  string icon = 2;
+}
+
+message Combination {
+  Entity A = 1;
+  Entity B = 2;
+}
+
+message InitEntities {
+  Entity fire = 1;
+  Entity water = 2;
+  Entity air = 3;
+  Entity ground = 4;
+}
